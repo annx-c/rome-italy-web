@@ -1,0 +1,13 @@
+h1, h3{
+  text-transform: uppercase;
+  font-family: "Konkhmer Sleokchher";
+  line-height: 144px;
+}
+
+h1{
+  font-size: 128px;
+}
+
+h3{
+  font-size: 20px;
+}
