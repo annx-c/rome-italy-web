@@ -1,13 +1,121 @@
-h1, h3{
-  text-transform: uppercase;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+
+body{
+  align-items: center;
+  background-color: #ccc;
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+.heading{
+  align-items: center;
+  background-image: url(/images/colosseum.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+  text-align: center;
   font-family: "Konkhmer Sleokchher";
-  line-height: 144px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
-h1{
-  font-size: 128px;
+.overlay{
+  background:rgba(217, 217, 217, 0.3);
+  backdrop-filter: blur(10px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 50%;
+  z-index: 0;
 }
 
-h3{
-  font-size: 20px;
+.text{
+  color: white;
+  position: relative;
+  
+  text-transform: uppercase;
+}
+
+
+.italy{
+  position: absolute;
+  font-size: 30px;
+  top: 30px; /* Para que esté un poco más arriba */
+  left: 0%; /* Centrado en el contenedor */
+  padding-left: 5px;
+}
+
+.rome{
+  font-size: 208px;
+}
+
+.rome::before {
+  background-image: url(/images/colosseum.png);
+  background-position: center;
+  background-size: cover;
+  background-clip: text;
+  content: "ROME";
+  color: transparent;
+  position: absolute;
+  left: 0;
+  width: 50%;
+  -webkit-background-clip: text;
+  
+}
+
+@keyframes buttonAnimation{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+button{
+  animation: buttonAnimation 10s ease infinite;
+  background: linear-gradient( 270deg,
+  #bbaa75,  /* arena */
+  #a67c52,
+  #947B3C,  /* tierra */
+  #d3ac7a  /* tostado suave */
+    /* tostado suave */
+  );
+  background-size: 600% 600%;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);;
+  color: black ;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: -60px;
+  padding: 20px 40px;
+  z-index: 2;
+  transition: all 1s ease-in-out;
+}
+
+button:hover{
+  animation:  buttonAnimation 10s ease infinite;
+  background: linear-gradient(
+    270deg,
+    #4b3621,   /* marrón piedra oscura */
+    #5a4632,   /* bronce viejo */
+    #3e2c1c,   /* sombra coliseo */
+    #6e4f2c    /* cobre/terracota oscuro */
+  );
+  background-size: 600% 600%;  
+  color: white;
 }
