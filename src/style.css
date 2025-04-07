@@ -11,7 +11,9 @@ body{
   width: 100%;
 }
 
-
+a{
+  text-decoration: none;
+}
 
 header{
   align-items: center;
@@ -121,6 +123,61 @@ a:hover{
   color: white;
 }
 
+footer{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(/images/basilica.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 50px 0;
+}
+
+.footer-about{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+ 
+}
+
+section{
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+footer h3{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+footer p{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  opacity: 0.7;
+}
+
+footer li{
+  list-style: none;
+}
+
+footer a{
+  color: white;
+  opacity: 0.7;
+}
+
+footer .footer-social-content{
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer .footer-social-content .social-icons a i{
+  color: white;
+  margin: 20px 15px;
+}
+/* Media Queries para Responsividad */
 
 @media (max-width: 900px){
 
