@@ -23,7 +23,7 @@ header{
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  height: 550px;
+  padding: 200px 0;
   justify-content: center;
   text-align: center;
   font-family: "Konkhmer Sleokchher";
