@@ -6,7 +6,7 @@
 
 body{
   align-items: center;
-  background-color: #ccc;
+  background-color: #000000;
   height: 100vh;
   width: 100%;
 }
@@ -123,6 +123,77 @@ a:hover{
   color: white;
 }
 
+/*MAIN*/
+main{
+  background-color: #000000;
+  font-family: "Abel", sans-serif;
+  color: #CCCCCC;
+  margin: 0 120px;
+}
+
+main h2{
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #FAB144;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+main h3{
+  color: white;
+  font-size: 30px;
+  line-height: 20px;
+  margin: 15px 0 30px 0;
+  text-transform: uppercase;
+}
+
+main p{
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+
+}
+
+section{
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 50px 0;
+}
+
+.grid{
+  display: grid;
+  gap: 50px;
+}
+
+.grid-2-columns{
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.masked{
+  height: auto;
+  -webkit-mask-image: url('/images/brush.png'); /* Usa el PNG como máscara */
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url('/images/brush.png');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+}
+
+.masked img {
+  width: 100%;
+  height: 450px;
+  display: block;
+}
+
+.img-responsive{
+  max-width: 100%;
+}
+
+/*FOOTER*/
+
 footer{
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(/images/basilica.png);
@@ -130,26 +201,21 @@ footer{
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  padding: 50px 0;
+  padding: 0 30px;
 }
 
-.footer-about{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+.grid-3-columns{
+  grid-template-columns: 1fr 2fr 2fr;
  
 }
 
-section{
-  margin: 0 auto;
-  max-width: 1400px;
-}
+
 
 footer h3{
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 footer p{
@@ -198,6 +264,47 @@ footer .footer-social-content .social-icons a i{
     margin-top: -30px;
     padding: 10px 20px;
   }
+
+  /*Main*/
+
+  main{
+    margin: 0 25px;
+  }
+
+  .grid-2-columns{
+    gap: 10px;
+  }
+
+  
+
+  .masked img {
+    height: 300px;
+  }
+
+  .rome-info h2{
+    font-size: 13px;
+  }
+
+  .rome-info h3{
+    font-size: 20px;
+  }
+
+  .rome-info p{
+    font-size: 13px;
+  }
+  /*Footer*/
+
+  footer h3{
+    font-size: 16px;
+  }
+
+  footer p, a{
+    font-size: 12px;
+  }
+
+  footer .grid-3-columns{
+    gap: 35px;
+  }
 }
 
 @media (max-width: 600px){ 
@@ -206,18 +313,71 @@ footer .footer-social-content .social-icons a i{
   }
 
   header .text .rome{
-    font-size: 75px;
+    font-size: 65px;
   }
 
   header .text .italy{
-    font-size: 10px;
+    font-size: 8px;
     top: 5px
   }
 
   header a{
     font-size: 8px;
-    margin-top: -20px;
+    margin-top: -15px;
     padding: 8px 10px;
+  }
+
+  /*Main*/
+
+  main{
+    margin: 0 20px;
+  }
+
+  .masked{
+    width: 350px;
+  }
+
+  .masked img {
+    height: 280px;
+  }
+
+  .grid-2-columns{
+    place-items: center;
+  }
+
+  .rome-info{
+    margin-top: 45px;
+  }
+
+  .rome-info h2{
+    font-size: 15px;
+  }
+
+  .rome-info h3{
+    font-size: 25px;
+  }
+
+  .rome-info p{
+    font-size: 15px;
+  }
+
+  /*Footer*/
+
+  footer{
+   padding: 0 20px;
+  }
+
+  .grid{
+    grid-template-columns: 1fr;
+  }
+
+
+  footer h3{
+    font-size: 16px;
+  }
+
+  footer p, a{
+    font-size: 14px;
   }
 
   
