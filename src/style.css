@@ -140,7 +140,7 @@ main h2{
   opacity: 0.6;
 }
 
-main h3{
+main  h3{
   color: white;
   font-size: 30px;
   line-height: 20px;
@@ -190,6 +190,55 @@ section{
 
 .img-responsive{
   max-width: 100%;
+}
+
+.rome-places h3{
+  text-align: center;
+  margin: 15px 0 65px;
+}
+
+.border-left-bottom {
+  border-left: 2px dashed #CCCCCC;
+  border-bottom: 2px dashed #CCCCCC;
+}
+
+.border-right-top {
+  border-right: 2px dashed #CCCCCC;
+  border-bottom: 2px dashed #CCCCCC;
+}
+
+.border-left{
+  border-left: 2px dashed #CCCCCC;
+}
+
+.italy-box {
+  margin: 0 180px;
+  gap: 0;
+  place-items: center;
+  padding:  25px;
+}
+
+.italy-box .italy-box-text{
+  margin: 20px 20px 20px 45px;
+}
+
+.italy-box .italy-box-text h4{
+  font-size: 23px;
+  margin: 15px 0;
+}
+
+.box-1  p{
+  padding: 0 100px 0 0;
+}
+
+.box-2 h4, p{
+  padding: 0 0 0 100px;
+}
+
+
+.italy-box img{
+  width: 350px;
+  height: 220px; 
 }
 
 /*FOOTER*/
@@ -274,8 +323,6 @@ footer .footer-social-content .social-icons a i{
   .grid-2-columns{
     gap: 10px;
   }
-
-  
 
   .masked img {
     height: 300px;
