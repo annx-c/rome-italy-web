@@ -52,8 +52,8 @@ header .text{
 .text .italy{
   position: absolute;
   font-size: 30px;
-  top: 30px; /* Para que esté un poco más arriba */
-  left: 0%; /* Centrado en el contenedor */
+  top: 30px; 
+  left: 0%; 
   padding-left: 5px;
   letter-spacing: 3px;
 }
@@ -188,11 +188,10 @@ section{
   height: 450px;
   display: block;
 }
-
-
+/*ROME PLACES*/
 .rome-places h3{
   text-align: center;
-  margin: 15px 0 65px;
+  margin: 15px 0 45px;
 }
 
 .border-right-top-bottom{
@@ -223,6 +222,9 @@ section{
 .italy-box-text h4{
   font-size: 23px;
   margin: 15px 0;
+  color: #FAB144;
+  text-transform: uppercase;
+  opacity: 0.6;
 }
 
 .italy-box-text a{
@@ -258,11 +260,42 @@ section{
   padding: 0 0 0 70px;
 }
 
-
-
 .italy-box img{
   width: 350px;
   height: 220px; 
+}
+
+/*ROME GALERY*/
+.galery-images{
+  text-align: center;
+}
+
+.galery-images h2{
+  margin: 15px;
+}
+
+.rome-images{
+  display: block;
+}
+
+.rome-images img{
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.rome-images img:hover{
+  transform: scale(1.05);
+  filter: contrast(1.2);
+}
+
+.img-horizontal{
+  width: 600px;
+  height: 350px;
+}
+
+.img-vertical{
+  width: 300px;
+  height: 350px;
 }
 
 /*FOOTER*/
@@ -281,8 +314,6 @@ footer{
   grid-template-columns: 1fr 2fr 2fr;
  
 }
-
-
 
 footer h3{
   font-size: 20px;
@@ -325,7 +356,7 @@ footer .footer-social-content .social-icons a i{
   }
 
   header .text .italy{
-    font-size: 15px;
+    font-size: 16px;
   }
 
   header .text .rome{
@@ -377,8 +408,9 @@ footer .footer-social-content .social-icons a i{
   }
 
   .italy-box-text a{
-    font-size: 15px;
-    padding: 8px 16px;
+    font-size: 16px;
+    
+    padding: 10px 20px;
   }
 
   .text-align-left{
@@ -387,6 +419,17 @@ footer .footer-social-content .social-icons a i{
 
   .text-align-right{
     padding: 0 0 0 30px;
+  }
+
+  /*ROME GALERY*/
+  .img-horizontal{
+    width: 400px;
+    height: 250px;
+  }
+
+  .img-vertical{
+    width: 200px;
+    height: 250px;
   }
   /*Footer*/
 
@@ -409,18 +452,18 @@ footer .footer-social-content .social-icons a i{
   }
 
   header .text .rome{
-    font-size: 65px;
+    font-size: 85px;
   }
 
   header .text .italy{
-    font-size: 8px;
+    font-size: 12px;
     top: 5px
   }
 
   header a{
-    font-size: 8px;
+    font-size: 10px;
     margin-top: -15px;
-    padding: 8px 10px;
+    padding: 12px 10px;
   }
 
   /*Main*/
@@ -495,6 +538,19 @@ footer .footer-social-content .social-icons a i{
   .text-align-left, .text-align-right{
     padding: 0;
 
+  }
+
+  /*ROME GALERY*/
+  .img-horizontal, .img-vertical{
+    width: 300px;
+    height: 300px;
+  }
+
+  .rome-images{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 20px;
   }
 
 
