@@ -102,38 +102,50 @@
 
         <div class="galery-videos">
           <h2>Videos</h2>
-          <button class="nav-btn nav-left" onclick="scrollCarousel(-1)">⟨</button>
-          <div class="rome-videos" id="video-carousel">   
-            <iframe 
-              src="https://www.youtube.com/embed/0m7H6_ZI1iM?si=4EInHtXSNbY6SHyF&amp;controls=0"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-
-            <iframe 
-              src="https://www.youtube.com/embed/JW5-7qGPl6U?si=hH6XCyZJaerSDZ6V&amp;controls=0"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-
-            <iframe 
-              src="https://www.youtube.com/embed/CVyuqIoB7qg?si=tUrY-MIeD_uyQsYA&amp;controls=0"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-
-            </iframe>
-            <iframe 
-              src="https://www.youtube.com/embed/NXnSZ2-eSr0?si=rH6nvyu91NAu20fw&amp;controls=0"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-
-            </iframe>
+          <div class="slider-wrapper">
+            <div class="rome-videos" >   
+              <iframe 
+              id="video-1"
+                src="https://www.youtube.com/embed/0m7H6_ZI1iM?si=4EInHtXSNbY6SHyF&amp;controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
+  
+              <iframe 
+                id="video-2"
+                src="https://www.youtube.com/embed/JW5-7qGPl6U?si=hH6XCyZJaerSDZ6V&amp;controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
+  
+              <iframe 
+                id="video-3"
+                src="https://www.youtube.com/embed/CVyuqIoB7qg?si=tUrY-MIeD_uyQsYA&amp;controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  
+              </iframe>
+              <iframe 
+                id="video-4"
+                src="https://www.youtube.com/embed/NXnSZ2-eSr0?si=rH6nvyu91NAu20fw&amp;controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  
+              </iframe>
+            </div>
+            <div class="slider-nav">
+              <a href="#video-1"></a>
+              <a href="#video-2"></a>
+              <a href="#video-3"></a>
+              <a href="#video-4"></a>
+            </div>
           </div>
-          <button class="nav-btn nav-right" onclick="scrollCarousel(1)">⟩</button>
+        
+         
         </div>
 
       </section>
@@ -190,12 +202,6 @@
     </footer>
   </div>
 </body>
-<script>
-  function scrollCarousel(direction) {
-    const carousel = document.getElementById("video-carousel");
-    const scrollAmount = carousel.clientWidth * 0.9;
-    carousel.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
-  }
-</script>
+
 
 </html>

@@ -191,7 +191,6 @@ section{
 /*ROME PLACES*/
 .rome-places h3{
   text-align: center;
-  margin: 15px 0 45px;
 }
 
 .border-right-top-bottom{
@@ -274,6 +273,11 @@ section{
   margin: 15px;
 }
 
+.galery-images, .galery-videos{
+  padding: 32px; 
+  margin: 0 auto;
+}
+
 .rome-images{
   display: block;
 }
@@ -299,7 +303,57 @@ section{
 }
 
 
+/*ROME VIDEOS*/
 
+
+.slider-wrapper{
+  position: relative;
+  max-width: 910px;
+  margin: 0 auto;
+}
+
+.rome-videos{
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.24px 48px -12px hsla(0, 0%, 0%, 0.25);
+  border-radius: 8px;
+}
+.rome-videos::-webkit-scrollbar {
+  display: none;
+}
+
+.rome-videos iframe{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav{
+  display: flex;
+  column-gap: 16px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.slider-nav a{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #FAB144;
+  border: 1px solid black;
+  opacity: 0.75;
+  transition:  opacity 250ms ease;
+}
+
+.slider-nav a:hover{
+  opacity: 1;
+}
 
 
 
@@ -436,6 +490,10 @@ footer .footer-social-content .social-icons a i{
     width: 200px;
     height: 250px;
   }
+
+  .slider-wrapper{
+    max-width: 650px;
+  }
   /*Footer*/
 
   footer h3{
@@ -547,8 +605,8 @@ footer .footer-social-content .social-icons a i{
 
   /*ROME GALERY*/
   .img-horizontal, .img-vertical{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 250px;
   }
 
   .rome-images{
@@ -556,6 +614,11 @@ footer .footer-social-content .social-icons a i{
     grid-template-columns: 1fr;
     place-items: center;
     gap: 20px;
+  }
+
+  .slider-nav a{
+    width: 10px;
+    height: 10px;  
   }
 
 
