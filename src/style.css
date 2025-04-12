@@ -266,11 +266,11 @@ section{
 }
 
 /*ROME GALERY*/
-.galery-images{
+.galery-images, .galery-videos{
   text-align: center;
 }
 
-.galery-images h2{
+.galery-images h2, .galery-videos h2{
   margin: 15px;
 }
 
@@ -297,6 +297,11 @@ section{
   width: 300px;
   height: 350px;
 }
+
+
+
+
+
 
 /*FOOTER*/
 

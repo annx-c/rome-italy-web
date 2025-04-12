@@ -54,18 +54,20 @@
             <a href="https://www.pantheonroma.com/home-eng/" target="_blank">Read more</a>
           </div>
           <div>
-            <img src="/images/pantheon.jpg" alt="the pantheon" >
+            <img src="/images/pantheon.jpg" alt="the pantheon">
           </div>
         </div>
         <div class="italy-box grid grid-2-columns border-right-top-bottom">
 
           <div>
-            <img src="/images/colosseum.png" alt="the colosseum" >
+            <img src="/images/colosseum.png" alt="the colosseum">
           </div>
           <div class="italy-box-text text-align-right">
             <h4>The Colosseum</h4>
             <p>
-              The most iconic symbol of Rome, this ancient amphitheater once held gladiator battles and public spectacles. Standing since 80 AD, it’s a masterpiece of Roman engineering and a must-visit for anyone exploring the Eternal City.
+              The most iconic symbol of Rome, this ancient amphitheater once held gladiator battles and public
+              spectacles. Standing since 80 AD, it’s a masterpiece of Roman engineering and a must-visit for anyone
+              exploring the Eternal City.
             </p>
             <a href="https://www.rome.net/colosseum" target="_blank">Read more</a>
           </div>
@@ -75,12 +77,13 @@
           <div class="italy-box-text text-align-left">
             <h4>Trevi Fountain</h4>
             <p>
-              A Baroque masterpiece where visitors toss coins to ensure their return to Rome. Its dramatic sculptures and flowing waters make it one of the most photographed spots in the city.
+              A Baroque masterpiece where visitors toss coins to ensure their return to Rome. Its dramatic sculptures
+              and flowing waters make it one of the most photographed spots in the city.
             </p>
             <a href="https://romesite.com/trevi-fountain.html" target="_blank">Read more</a>
           </div>
           <div>
-            <img src="/images/trevi_fountain.jpg" alt="the trevi fountain" >
+            <img src="/images/trevi_fountain.jpg" alt="the trevi fountain">
           </div>
         </div>
       </section>
@@ -90,12 +93,47 @@
           <h2>Images</h2>
           <div class=" rome-images">
             <img src="/images/rome-img-3.png" alt="rome-img-3" class="img-vertical ">
-            <img src="/images/rome-img-1.png" alt="rome-img-1" class="img-horizontal">
-        
-            <img src="/images/rome-img-2.png" alt="rome-img-2" class="img-horizontal">
-            <img src="/images/rome-img-4.png" alt="rome-img-4" class="img-vertical">
+            <img src="/images/rome-img-1.jpg" alt="rome-img-1" class="img-horizontal">
+
+            <img src="/images/rome-img-2.jpg" alt="rome-img-2" class="img-horizontal">
+            <img src="/images/rome-img-4.jpg" alt="rome-img-4" class="img-vertical">
           </div>
-          
+        </div>
+
+        <div class="galery-videos">
+          <h2>Videos</h2>
+          <button class="nav-btn nav-left" onclick="scrollCarousel(-1)">⟨</button>
+          <div class="rome-videos" id="video-carousel">   
+            <iframe 
+              src="https://www.youtube.com/embed/0m7H6_ZI1iM?si=4EInHtXSNbY6SHyF&amp;controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe 
+              src="https://www.youtube.com/embed/JW5-7qGPl6U?si=hH6XCyZJaerSDZ6V&amp;controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe 
+              src="https://www.youtube.com/embed/CVyuqIoB7qg?si=tUrY-MIeD_uyQsYA&amp;controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+            </iframe>
+            <iframe 
+              src="https://www.youtube.com/embed/NXnSZ2-eSr0?si=rH6nvyu91NAu20fw&amp;controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+            </iframe>
+          </div>
+          <button class="nav-btn nav-right" onclick="scrollCarousel(1)">⟩</button>
         </div>
 
       </section>
@@ -152,5 +190,12 @@
     </footer>
   </div>
 </body>
+<script>
+  function scrollCarousel(direction) {
+    const carousel = document.getElementById("video-carousel");
+    const scrollAmount = carousel.clientWidth * 0.9;
+    carousel.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+  }
+</script>
 
 </html>
