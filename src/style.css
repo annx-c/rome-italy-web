@@ -404,7 +404,17 @@ footer .footer-social-content{
 
 footer .footer-social-content .social-icons a i{
   color: white;
-  margin: 20px 15px;
+  margin: 20px 10px;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+ .footer-social-content .social-icons a i:hover, .footer-social-content p a:hover {
+  color: #FAB144;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
 }
 /* Media Queries para Responsividad */
 
